@@ -5,7 +5,154 @@
     font-style: normal;
 }
 
-body {
-    font-family: "Norse", sans-serif;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+    min-height: 200px;
+    position: relative;
+    padding-top: 25px;
+}
+
+legend {
+    position: absolute;
+    top: 8px;
+    left: 32px;
+    font-weight: bold;
+}
+
+
+/* ASIDE */
+aside {
+    flex-basis: 25%;
+    min-height: 100vh;
+    background-image: url(assets/img/fondo-montañas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-content {
+    background-color: rgba(0 0 0 /.5);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 12rem;
+}
+
+.aside-content img {
+    width: 65px;
+}
+
+.aside-content h2 {
+    color: white;
+    font-family: "Norse", sans-serif;
+    font-size: 3rem;
+}
+
+.aside-footer {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.aside-footer a {
+    color: white;
+}
+
+.aside-footer a:hover {
+    color: gray;
+}
+
+.aside-footer a:visited {
+    color: darkorchid;
+}
+
+
+/* MAIN */
+main {
+    background-color: ghostwhite;
+    flex-basis: 75%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: stretch;
+   overflow: hidden;
+}
+
+main p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: 768px;
+}
+
+main header {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main>section {
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-actions {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+}
+
+fieldset {
+    background-color: white;
+    border: none;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+button[type="submit"] {
+
+    background-color: #597e52;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}

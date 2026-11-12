@@ -156,3 +156,49 @@ button[type="submit"] {
     font-weight: bold;
     cursor: pointer;
 }
+
+legend {
+    margin-top: .5rem;
+    font-size: 1.25rem;
+}
+
+.container-form {
+    width: 80%;
+    padding-top: 2rem;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.form-item {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+form label {
+    font-weight: bold;
+    letter-spacing: .15rem ;
+    font-size: .75rem;
+}
+
+form input {
+    padding: .5rem;
+    border-radius: 5px;
+    border: #7e7d7db6 solid thin;
+    background-color: rgba(252, 244, 255, 0.568);
+    box-shadow: 0 0 5px 5px #22222211;
+}
+
+form input:focus {
+    border: transparent solid thin;
+    outline: solid medium rgb(128, 172, 238);
+}
+
+form input:user-invalid {
+    border: none;
+    outline: solid thin rgb(219, 8, 8);
+}
+
